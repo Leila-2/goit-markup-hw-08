@@ -1,0 +1,51 @@
+@import "./utils/variables";
+/* Хедер */
+@import "./components/logo";
+@import "./components/nav";
+@import "./components/page-header";
+@import "./components/contacts";
+/*Base*/
+@import "./base/container";
+@import "./base/common";
+@import "./base/section";
+@import "./base/card-set";
+
+/* Hero section */
+@import "./layout/_hero-section";
+@import "./components/buttons";
+
+/* Особенности */
+@import "./components/titles";
+@import "./layout/features";
+
+/* Чем мы занимаемся */
+@import "./layout/gallery";
+
+/* Наша команда */
+@import "./layout/team";
+
+/* Иконки соц-сетей */ /* Иконки футера */
+@import "./components/social-icons";
+@import "./components/socials.scss";
+
+/* Постоянные клиенты */
+@import "./layout/clients";
+
+/* Футер */
+@import "./layout/footer";
+@import "./components/addres";
+
+/* Инпут футера */
+@import "./components/footer-form";
+
+/* Портфолио */
+@import "./components/filters.scss";
+@import "./layout/portfolio";
+@import "./components/overlay";
+
+/* Модальное окно */
+@import "./components/modal";
+@import "./components/forms";
+
+/* Checkbox */
+@import "./components/checkbox";

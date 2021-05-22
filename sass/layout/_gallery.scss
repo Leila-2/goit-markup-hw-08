@@ -1,0 +1,36 @@
+.gallery {
+  padding-top: 0;
+}
+
+.gallery__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.gallery__item {
+  flex-basis: calc((100% - 3 * 30px) / 3);
+  position: relative;
+  display: flex;
+}
+.gallery__title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+
+.gallery__text {
+  height: 70px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background-color: rgba(47, 48, 58, 0.8);
+}
