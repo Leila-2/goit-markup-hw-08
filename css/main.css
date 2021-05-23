@@ -137,11 +137,14 @@
 
 /*Base*/
 .container {
-  width: 1200px;
-  padding-right: 15px;
-  padding-left: 15px;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    background-color: chartreuse;
+  }
 }
 
 html {
