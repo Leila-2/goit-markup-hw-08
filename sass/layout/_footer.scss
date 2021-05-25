@@ -1,6 +1,9 @@
 .footer__container {
-  display: inline-flex;
-  align-items: baseline;
+  @media screen and (min-width: 768px) {
+    display: inline-flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+  }
 }
 .footer__item {
   margin-top: 9px;
@@ -10,6 +13,7 @@
   margin: 0;
 }
 .footer--dark-bg {
+  width: 100%;
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--dark-bg);
@@ -44,7 +48,13 @@
 }
 
 .footer__address-container {
-  margin-right: 70px;
+  @media screen and (min-width: 480px) and (max-width: 1199px) {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: 768px) {
+    margin-right: 70px;
+  }
 }
 .footer__link:hover,
 .footer__link:focus {

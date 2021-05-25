@@ -1,9 +1,14 @@
 .filters {
-  justify-content: center;
   margin-bottom: 50px;
   margin-right: 0;
   display: flex;
   flex-wrap: wrap;
+}
+
+@media screen and (min-width: 768px) {
+  .filters {
+    justify-content: center;
+  }
 }
 
 .filters__button {
@@ -38,15 +43,14 @@
 
 .filters__item {
   text-align: center;
+  margin-bottom: 15px;
 }
 
 .filters__item:not(:last-child) {
   margin-right: 9px;
 }
 
-.filters__item-item {
-  justify-content: center;
-  margin-bottom: 50px;
-  margin-right: 0;
+.filters__item:nth-last-child(-n + 2) {
+  margin-bottom: 0;
 }
 /*# sourceMappingURL=filters.css.map */

@@ -1,5 +1,4 @@
 .logo {
-  margin-right: 93px;
   color: var(--secondary-color);
   font-family: var(--accent-font);
   font-size: 26px;
@@ -12,6 +11,10 @@
   &--white {
     color: #f5f4fa;
     padding: 0;
+
+    @media screen and (min-width: 1200px) {
+      margin-right: 93px;
+    }
   }
   &__logo-part {
     color: var(--accent-color);
