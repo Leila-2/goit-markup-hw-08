@@ -1,9 +1,14 @@
 .join-container {
+  text-align: center;
+
   @media screen and (max-width: 767px) {
-    text-align: center;
     margin-bottom: 60px;
   }
   @media screen and (min-width: 768px) {
+    margin-left: auto;
+  }
+  @media screen and (min-width: 1200px) {
+    text-align: left;
     margin-right: 70px;
   }
 }
@@ -42,8 +47,10 @@
   height: 20px;
 }
 .footer__send-container {
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 480px) and (max-width: 1199px) {
     text-align: center;
+    margin-right: auto;
+    margin-left: auto;
   }
   @media screen and (min-width: 1200px) {
     flex-wrap: wrap-reverse;
