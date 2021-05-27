@@ -4,8 +4,12 @@
   &__container {
     display: flex;
     align-items: center;
-  }
+    width: 100%;
 
+    @media screen and(max-width:767px) {
+      height: 60px;
+    }
+  }
   &__logo {
     margin-right: 93px;
   }

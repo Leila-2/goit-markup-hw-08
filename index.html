@@ -57,12 +57,62 @@
             </a>
           </li>
         </ul>
+        <button class="mobile-menu__btn" data-menu-button>
+          <svg class="mobile-menu__svg">
+            <use
+              class="mobile-menu__icon"
+              href="./images/svg/sprite.svg#icon-menu"
+            ></use>
+            <use
+              class="mobile-menu__icon-close"
+              href="./images/svg/sprite.svg#icon-close-btn"
+            ></use>
+          </svg>
+        </button>
       </div>
     </header>
+    <!-- Mobile-menu -->
+    <div class="mobile-menu" data-menu>
+      <nav class="mobile__nav">
+        <ul class="mobile__nav-list">
+          <li class="mobile__nav-item">
+            <a class="mobile__nav-link" href="./index.html">Студия</a>
+          </li>
+          <li class="mobile__nav-item">
+            <a
+              class="mobile__nav-link mobile__nav-link--current"
+              href="./portfolio.html"
+              >Портфолио</a
+            >
+          </li>
+          <li class="mobile__nav-item">
+            <a class="mobile__nav-link" href="">Кoнтакты</a>
+          </li>
+        </ul>
+      </nav>
+      <ul class="mobile__contacts">
+        <li class="mobile__contacts-item">
+          <a class="mobile__phone-link" href="tel:+380961111111">
+            +38 096 111 11 11
+          </a>
+        </li>
+        <li class="mobile__contacts-item">
+          <a class="mobile__mail-link" href="mailto:info@devstudio.com">
+            info@devstudio.com
+          </a>
+        </li>
+      </ul>
+      <ul class="mobile-socials">
+        <li class="mobile-socials__item">Instagram</li>
+        <li class="mobile-socials__item">Twitter</li>
+        <li class="mobile-socials__item">Facebook</li>
+        <li class="mobile-socials__item">LinkedIn</li>
+      </ul>
+    </div>
 
     <main>
       <!-- Hero section -->
-      <section class="hero hero-section">
+      <!--  <section class="hero hero-section">
         <div class="container hero-container">
           <h1 class="hero__title">
             Эффективные решения <br />
@@ -72,7 +122,7 @@
             Заказать услугу
           </button>
         </div>
-      </section>
+      </section> -->
       <!-- Особенности -->
       <section class="section">
         <div class="container">
@@ -110,7 +160,7 @@
         </div>
       </section>
       <!-- Чем мы занимаемся -->
-      <section class="section gallery">
+      <!-- <section class="section gallery">
         <div class="container">
           <h2 class="second-title">Чем мы занимаемся</h2>
           <ul class="list card-set">
@@ -139,8 +189,9 @@
           </ul>
         </div>
       </section>
+      -->
       <!--Наша комнада-->
-      <section class="section team">
+      <!-- <section class="section team">
         <div class="container">
           <h2 class="second-title">Наша команда</h2>
 
@@ -403,10 +454,10 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <!-- Постоянные  клиенты -->
-      <section class="section">
+      <!-- <section class="section">
         <div class="container">
           <h2 class="second-title">Постоянные клиенты</h2>
           <ul class="list clients-list">
@@ -454,7 +505,7 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section>  -->
     </main>
 
     <!-- Футер -->
@@ -646,5 +697,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

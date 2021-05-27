@@ -1,5 +1,8 @@
 .contacts {
-  display: flex;
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: inline;
+  }
 }
 
 .contacts__item:not(:last-child) {
@@ -8,8 +11,6 @@
 .contacts__link {
   display: flex;
   align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
 
   line-height: 1.43;
   font-weight: 500;
@@ -21,6 +22,16 @@
   &:hover,
   &:focus {
     color: var(--accent-color);
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
 }
 .contacts__icon {

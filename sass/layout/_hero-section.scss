@@ -1,7 +1,7 @@
 .hero-section {
   margin-left: auto;
   margin-right: auto;
-  padding: 200px 0px;
+
   background-image: linear-gradient(
       to top,
       rgba(47, 48, 58, 0.4),
@@ -11,6 +11,16 @@
 
   max-width: 1600px;
   background-repeat: no-repeat;
+
+  @media screen and (max-width: 767px) {
+    background-image: url(../images/bgimg-mob.jpg);
+    padding: 118px 0px;
+    background-size: cover;
+  }
+  @media screen and (min-width: 1200px) {
+    background-image: url(../images/bgimg.jpg);
+    padding: 200px 0px;
+  }
 }
 
 .hero-container {
@@ -18,7 +28,7 @@
 }
 
 .hero__title {
-  font-size: 44px;
+  font-size: 26px;
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -26,4 +36,8 @@
   font-weight: 900;
   color: #ffffff;
   margin-bottom: 30px;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 44px;
+  }
 }
