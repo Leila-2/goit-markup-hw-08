@@ -43,6 +43,12 @@
   align-items: center;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .nav {
+    display: inline-flex;
+  }
+}
+
 .nav__list {
   display: none;
 }
@@ -113,9 +119,15 @@
   display: none;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .contacts {
     display: inline;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts {
+    display: flex;
   }
 }
 
@@ -319,6 +331,7 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
+  outline: 1px solid red;
 }
 
 img {
