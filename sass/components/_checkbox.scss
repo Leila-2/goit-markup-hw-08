@@ -10,6 +10,12 @@
   justify-content: center;
 
   margin-bottom: 30px;
+  @media screen and (max-width: 1199px) {
+    font-size: 12px;
+  }
+  // @media screen and (max-width: 479px) {
+  //   font-size: 10px;
+  // }
 }
 .checkbox__link {
   text-decoration-line: underline;

@@ -2,14 +2,21 @@
   display: none;
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     display: inline;
+    margin-left: 80px;
   }
   @media screen and (min-width: 1200px) {
     display: flex;
   }
 }
 
-.contacts__item:not(:last-child) {
-  margin-right: 50px;
+.contacts__item {
+  &:not(:last-child) {
+    margin-right: 50px;
+
+    @media screen and (max-width: 1199px) {
+      margin-right: 0;
+    }
+  }
 }
 .contacts__link {
   display: flex;
