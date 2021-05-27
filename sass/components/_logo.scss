@@ -1,13 +1,16 @@
 .logo {
   color: var(--secondary-color);
   font-family: var(--accent-font);
-  font-size: 26px;
+  font-size: 24px;
   letter-spacing: 0.03em;
   line-height: 1.19;
   padding-top: 30px;
   padding-bottom: 30px;
   text-decoration: none;
 
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+  }
   &--white {
     color: #f5f4fa;
     padding: 0;
