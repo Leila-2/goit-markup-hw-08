@@ -1320,6 +1320,7 @@ a {
     max-width: 450px;
     width: 100%;
     height: 609px;
+    overflow: scroll;
   }
 }
 
