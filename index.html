@@ -165,23 +165,86 @@
           <h2 class="second-title">Чем мы занимаемся</h2>
           <ul class="list card-set">
             <li class="gallery__item">
-              <img
-                width="370"
-                src="./images/img.png"
-                alt="компьютер и планшет"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/img_desktop.webp    1x,
+                    ./images/desktop/img@2x_desktop.webp 2x
+                  "
+                  media="(min-width:1200px)"
+                  type="image/webp"
+                />
+
+                <source
+                  srcset="
+                    ./images/desktop/img_desktop.jpg    1x,
+                    ./images/desktop/img@2x_desktop.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                  type="image/jpeg"
+                />
+
+                <img
+                  width="370"
+                  src="./images/img.jpg"
+                  alt="компьютер и планшет"
+                />
+              </picture>
+
               <div class="gallery__text">
                 <h3 class="gallery__title">десктопные приложения</h3>
               </div>
             </li>
             <li class="gallery__item">
-              <img width="370" src="./images/img2.png" alt="Компьютер" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/img2_desktop.webp    1x,
+                    ./images/desktop/img2@2x_desktop.webp 2x
+                  "
+                  media="(min-width:1200px)"
+                  type="image/webp"
+                />
+
+                <source
+                  srcset="
+                    ./images/desktop/img2_desktop.jpg    1x,
+                    ./images/desktop/img2@2x_desktop.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                  type="image/jpeg"
+                />
+
+                <img width="370" src="./images/img2.jpg" alt="Компьютер" />
+              </picture>
+
               <div class="gallery__text">
                 <h3 class="gallery__title">мобильные приложения</h3>
               </div>
             </li>
             <li class="gallery__item">
-              <img width="370" src="./images/img3.png" alt="планшет" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/img3_desktop.webp    1x,
+                    ./images/desktop/img3@2x_desktop.webp 2x
+                  "
+                  media="(min-width:1200px)"
+                  type="image/webp"
+                />
+
+                <source
+                  srcset="
+                    ./images/desktop/img3_desktop.jpg    1x,
+                    ./images/desktop/img3@2x_desktop.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                  type="image/jpeg"
+                />
+
+                <img width="370" src="./images/img3.jpg" alt="планшет" />
+              </picture>
+
               <div class="gallery__text">
                 <h3 class="gallery__title">дизайнерские решения</h3>
               </div>
@@ -197,11 +260,62 @@
 
           <ul class="list card-set">
             <li class="team__cards">
-              <img
-                width="270"
-                src="./images/demyanenko.jpg"
-                alt="Фото Игоря Демьяненко"
-              />
+              <picture>
+                <source
+                  media="(min-width:1200px )"
+                  srcset="
+                    ./images/desktop/demyanenko_desktop.webp    1x,
+                    ./images/desktop/demyanenko@2x_desktop.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width:768px )"
+                  srcset="
+                    ./images/tablet/demyanenko_tablet.webp    1x,
+                    ./images/tablet/demyanenko@2x_tablet.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width:767px )"
+                  srcset="
+                    ./images/mobile/demyanenko_mobile.webp    1x,
+                    ./images/mobile/demyanenko@2x_mobile.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width:1200px )"
+                  srcset="
+                    ./images/desktop/demyanenko_desktop.jpg    1x,
+                    ./images/desktop/demyanenko@2x_desktop.jpg 2x
+                  "
+                  type="image/jpeg"
+                />
+                <source
+                  media="(min-width:768px )"
+                  srcset="
+                    ./images/tablet/demyanenko_tablet.jpg    1x,
+                    ./images/tablet/demyanenko@2x_tablet.jpg 2x
+                  "
+                  type="image/jpeg"
+                />
+                <source
+                  media="(max-width:767px )"
+                  srcset="
+                    ./images/mobile/demyanenko_mobile.jpg    1x,
+                    ./images/mobile/demyanenko@2x_mobile.jpg 2x
+                  "
+                  type="image/jpeg"
+                />
+                <img
+                  width="270"
+                  src="./images/demyanenko_desktop.jpg"
+                  alt="Фото Игоря Демьяненко"
+                />
+              </picture>
+
               <div class="team__text">
                 <h3 class="team__names">Игорь Демьяненко</h3>
                 <p class="team__position">Product Designer</p>
@@ -261,11 +375,62 @@
               </div>
             </li>
             <li class="team__cards">
-              <img
-                width="270"
-                src="./images/repina.jpg"
-                alt="Фото Ольги Репиной"
-              />
+              <picture>
+                <source
+                  media="(min-width:1200px )"
+                  srcset="
+                    ./images/desktop/repina_desktop.webp    1x,
+                    ./images/desktop/repina@2x_desktop.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width:768px )"
+                  srcset="
+                    ./images/tablet/repina_tablet.webp    1x,
+                    ./images/tablet/repina@2x_tablet.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width:767px )"
+                  srcset="
+                    ./images/mobile/repina_mobile.webp    1x,
+                    ./images/mobile/repina@2x_mobile.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width:1200px )"
+                  srcset="
+                    ./images/desktop/repina_desktop.jpg    1x,
+                    ./images/desktop/repina@2x_desktop.jpg 2x
+                  "
+                  type="image/jpeg"
+                />
+                <source
+                  media="(min-width:768px )"
+                  srcset="
+                    ./images/tablet/repina_tablet.jpg    1x,
+                    ./images/tablet/repina@2x_tablet.jpg 2x
+                  "
+                  type="image/jpeg"
+                />
+                <source
+                  media="(max-width:767px )"
+                  srcset="
+                    ./images/mobile/repina_mobile.jpg    1x,
+                    ./images/mobile/repina@2x_mobile.jpg 2x
+                  "
+                  type="image/jpeg"
+                />
+                <img
+                  width="270"
+                  src="./images/mobile/repina_mobile.jpg"
+                  alt="Фото Ольги Репиной"
+                />
+              </picture>
+
               <div class="team__text">
                 <h3 class="team__names">Ольга Репина</h3>
                 <p class="team__position">Frontend Developer</p>
@@ -325,11 +490,62 @@
               </div>
             </li>
             <li class="team__cards">
-              <img
-                width="270"
-                src="./images/tarasov.jpg"
-                alt="Фото Николая Тарасова"
-              />
+              <picture>
+                <source
+                  media="(min-width:1200px )"
+                  srcset="
+                    ./images/desktop/tarasov_desktop.webp    1x,
+                    ./images/desktop/tarasov@2x_desktop.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width:768px )"
+                  srcset="
+                    ./images/tablet/tarasov_tablet.webp    1x,
+                    ./images/tablet/tarasov@2x_tablet.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width:767px )"
+                  srcset="
+                    ./images/mobile/tarasov_mobile.webp    1x,
+                    ./images/mobile/tarasov@2x_mobile.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width:1200px )"
+                  srcset="
+                    ./images/desktop/tarasov_desktop.jpg    1x,
+                    ./images/desktop/tarasov@2x_desktop.jpg 2x
+                  "
+                  type="image/jpeg"
+                />
+                <source
+                  media="(min-width:768px )"
+                  srcset="
+                    ./images/tablet/tarasov_tablet.jpg    1x,
+                    ./images/tablet/tarasov@2x_tablet.jpg 2x
+                  "
+                  type="image/jpeg"
+                />
+                <source
+                  media="(max-width:767px )"
+                  srcset="
+                    ./images/mobile/tarasov_mobile.jpg    1x,
+                    ./images/mobile/tarasov@2x_mobile.jpg 2x
+                  "
+                  type="image/jpeg"
+                />
+                <img
+                  width="270"
+                  src="./images/mobile/tarasov_mobile.jpg"
+                  alt="Фото Николая Тарасова"
+                />
+              </picture>
+
               <div class="team__text">
                 <h3 class="team__names">Николай Тарасов</h3>
                 <p class="team__position">Marketing</p>
