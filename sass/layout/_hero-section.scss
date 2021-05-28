@@ -1,7 +1,7 @@
 .hero-section {
   margin-left: auto;
   margin-right: auto;
-
+  padding: 118px 0px;
   background-image: linear-gradient(
       to top,
       rgba(47, 48, 58, 0.4),
@@ -11,15 +11,21 @@
 
   max-width: 1600px;
   background-repeat: no-repeat;
+  background-size: cover;
 
-  @media screen and (max-width: 767px) {
-    background-image: url(../images/bgimg-mob.jpg);
-    padding: 118px 0px;
-    background-size: cover;
-  }
-  @media screen and (min-width: 1200px) {
-    background-image: url(../images/bgimg.jpg);
-    padding: 200px 0px;
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    @media screen and (max-width: 767px) {
+      background-image: url(../images/mobile/bgimg@2x_mobile.jpg);
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      background-image: url(../images/tablet/bgimg@2x_tablet.jpg);
+    }
+    @media screen and (min-width: 1200px) {
+      background-image: url(../images/desktop/bgimg@2x_desktop.jpg);
+      padding: 200px 0px;
+    }
   }
 }
 

@@ -605,11 +605,62 @@
               </div>
             </li>
             <li class="team__cards">
-              <img
-                width="270"
-                src="./images/yermakov.jpg"
-                alt="Фото Михаила Ермакова"
-              />
+              <picture>
+                <source
+                  media="(min-width:1200px )"
+                  srcset="
+                    ./images/desktop/yermakov_desktop.webp    1x,
+                    ./images/desktop/yermakov@2x_desktop.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width:768px )"
+                  srcset="
+                    ./images/tablet/yermakov_tablet.webp    1x,
+                    ./images/tablet/yermakov@2x_tablet.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width:767px )"
+                  srcset="
+                    ./images/mobile/yermakov_mobile.webp    1x,
+                    ./images/mobile/yermakov@2x_mobile.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width:1200px )"
+                  srcset="
+                    ./images/desktop/yermakov_desktop.jpg    1x,
+                    ./images/desktop/yermakov@2x_desktop.jpg 2x
+                  "
+                  type="image/jpeg"
+                />
+                <source
+                  media="(min-width:768px )"
+                  srcset="
+                    ./images/tablet/yermakov_tablet.jpg    1x,
+                    ./images/tablet/yermakov@2x_tablet.jpg 2x
+                  "
+                  type="image/jpeg"
+                />
+                <source
+                  media="(max-width:767px )"
+                  srcset="
+                    ./images/mobile/yermakov_mobile.jpg    1x,
+                    ./images/mobile/yermakov@2x_mobile.jpg 2x
+                  "
+                  type="image/jpeg"
+                />
+                <img
+                  width="270"
+                  src="./images/mobile/yermakov_mobile.jpg"
+                  alt="Фото Михаила Ермакова"
+                />
+              </picture>
+
               <div class="team__text">
                 <h3 class="team__names">Михаил Ермаков</h3>
                 <p class="team__position">UI Designer</p>
