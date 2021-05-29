@@ -452,6 +452,25 @@ a {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .hero-section {
+    background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobile/bgimg_mobile.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .hero-section {
+    background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/tablet/bgimg_tablet.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-section {
+    background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/desktop/bgimg_desktop.jpg);
+    padding: 200px 0px;
+  }
+}
+
 .hero-container {
   max-width: 696px;
 }
@@ -964,16 +983,10 @@ a {
 /* Футер */
 @media screen and (min-width: 768px) {
   .footer__container {
-    display: inline-flex;
+    display: flex;
     align-items: baseline;
     flex-wrap: wrap;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .footer__container {
-    padding-left: 76px;
-    padding-right: 76px;
+    justify-content: space-around;
   }
 }
 

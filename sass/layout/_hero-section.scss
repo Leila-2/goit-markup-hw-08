@@ -37,6 +37,32 @@
       padding: 200px 0px;
     }
   }
+  @media screen and (max-width: 767px) {
+    background-image: linear-gradient(
+        to top,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/mobile/bgimg_mobile.jpg);
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    background-image: linear-gradient(
+        to top,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/tablet/bgimg_tablet.jpg);
+  }
+  @media screen and (min-width: 1200px) {
+    background-image: linear-gradient(
+        to top,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/desktop/bgimg_desktop.jpg);
+
+    padding: 200px 0px;
+  }
 }
 
 .hero-container {
