@@ -1,29 +1,37 @@
 .features {
   &__item {
-    margin-right: 30px;
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+
     flex-basis: calc((100% - 4 * 30px) / 4);
 
     @media screen and(max-width:767px) {
       width: 100%;
-    }
-    @media screen and (min-width: 767px) and (max-width: 1199px) {
-      width: 354px;
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
     }
 
     @media screen and(min-width:768px) and (max-width: 1199px) {
       width: 354px;
       flex-basis: calc((100% - 2 * 30px) / 2);
       justify-content: center;
+      &:nth-child(-n + 2) {
+        margin-bottom: 30px;
+      }
 
       &:nth-child(2n) {
         margin-right: 0;
       }
     }
-    @media screen and(min-width:768px) and (min-width: 1199px) {
+    @media screen and (min-width: 1199px) {
       width: 270px;
       flex-basis: calc((100% - 4 * 30px) / 4);
+      margin-bottom: 0;
     }
   }
+
   &__title {
     font-size: 14px;
     line-height: 1.14;
@@ -43,10 +51,8 @@
     letter-spacing: 0.03em;
     color: var(--primary-color);
   }
-  &__item:not(:last-child) {
-    margin-bottom: 30px;
-  }
 }
+
 .first-feature::before {
   content: "";
   background-image: url(../images/svg/antenna.svg);
